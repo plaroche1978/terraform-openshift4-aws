@@ -3,7 +3,7 @@ terraform {
     organization = "pascal-tfc-org"
 
     workspaces {
-      name = "dev-rosa"
+      name = "dev-ca-east-rosa"
     }
   }
 }
