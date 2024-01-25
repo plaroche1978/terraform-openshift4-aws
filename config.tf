@@ -1,5 +1,11 @@
 terraform {
-  required_version = ">= 0.12"
+  cloud {
+    organization = "pascal-tfc-org"
+
+    workspaces {
+      name = "dev-rosa"
+    }
+  }
 }
 
 variable "machine_cidr" {
@@ -11,9 +17,6 @@ Default "10.0.0.0/16"
 EOF
   default = "10.0.0.0/16"
 }
-
-
-
 
 variable "base_domain" {
   type = string
